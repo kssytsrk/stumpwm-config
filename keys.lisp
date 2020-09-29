@@ -74,6 +74,10 @@
              (kbd "C-g") "abort"
              (kbd "C-Cyrillic_pe") "abort"
 
+             (kbd "C-f") "fullscreen"
+
+             (kbd "C-j") "exec setxkbmap us -variant colemak"
+             (kbd "C-n") "exec setxkbmap us,ru,ua -option grp:ctrl_shift_toggle caps:ctrl ctrl:nocaps"
              (kbd ";")   "colon"
              (kbd ":")   "eval"
              (kbd "m") "lastmsg"

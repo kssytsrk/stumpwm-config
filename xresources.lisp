@@ -64,7 +64,7 @@
   (get-resource "*.foreground"))
 
 (defvar *float-unfocus-color*
-  (get-resource "*.color1"))
+  (get-resource "*.color2"))
 
 ;; the following resources already have variables
 ;; just overwrite them if anything is set in X resources
@@ -93,11 +93,11 @@
 ;;	  *mode-line-background-color*))
 
 (setf *mode-line-foreground-color*
-      (or (get-resource "*.color1")
+      (or (get-resource "*.color5")
           *mode-line-foreground-color*))
 
 (setf *mode-line-border-color*
-      (or (get-resource "*.color1")
+      (or (get-resource "*.color5")
           *mode-line-border-color*))
 
 
