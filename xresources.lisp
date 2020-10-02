@@ -2,6 +2,8 @@
 
 (export '(get-resource))
 
+(run-shell-command "xrdb ~/.Xresources")
+
 (defun resource-query (name)
   "Returns the shell command used by `get-resource'"
   (concatenate 'string

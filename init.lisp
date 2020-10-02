@@ -33,14 +33,10 @@
   ;; startup commands
   (run-shell-command "hsetroot -solid \"#1e1c1f\"") ; wallpaper, solid color
 
-  (run-shell-command "xinput --disable 20")         ; disabling touchpad
-
   (run-shell-command "setxkbmap us,ru,ua -option grp:ctrl_shift_toggle caps:ctrl ctrl:nocaps") ; ru and ua layouts toggled with C-S, remapped caps to another ctrl
 
   (run-shell-command "emacs --fg-daemon")
-  (run-shell-command "emacs ~/usr/org/todo.org")    ; loading my todo
-
-  (run-shell-command "xrdb ~/.Xresources"))
+  (run-shell-command "emacs ~/usr/org/todo.org"))    ; loading my todo
 
 (add-hook *start-hook* 'just-startup-things)
 
