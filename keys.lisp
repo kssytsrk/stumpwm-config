@@ -39,7 +39,10 @@
              (kbd "s-e") "emacs"
              (kbd "s-q") "qutebrowser"
 
-             (kbd "SunPrint_Screen") "exec flameshot gui")
+             (kbd "SunPrint_Screen") "exec flameshot gui"
+
+             (kbd "XF86MonBrightnessDown") "exec xbacklight -dec 10"
+             (kbd "XF86MonBrightnessUp") "exec xbacklight -inc 10")
 
 ;; prefix keybindings
 (fill-keymap *root-map*
